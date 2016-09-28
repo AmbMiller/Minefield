@@ -44,7 +44,7 @@
 **/
  bool Field::inBounds(int col, int row)
  {
- 	if(row < 0 || row > FIELD_DIMENSION || col < 0 || col > FIELD_DIMENSION)
+ 	if(row < 0 || row >= FIELD_DIMENSION || col < 0 || col >= FIELD_DIMENSION)
  	{
  		return false;
  	}
